@@ -1,0 +1,230 @@
+.ant-table-thead {
+  tr {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  th {
+    height: 36px;
+    background-color: #f7f7f7 !important;
+    color: #353937;
+    font-weight: bold !important;
+  }
+
+  .ant-table-selection-column {
+    display: none;
+  }
+}
+
+.ant-table-tbody {
+  margin: 0 !important;
+  tr:nth-child(2n) td {
+    background-color: #fafafa !important;
+    pre {
+      background-color: #fff !important;
+    }
+  }
+  tr {
+    &:hover td {
+      background-color: #FBFFB9 !important;
+    }
+    &.ant-table-row-selected td {
+      background-color: #FBFFB9 !important;
+    }
+  }
+  td {
+    color: #333;
+    a {
+      color: #1890ff;
+    }
+  }
+  .ant-table-selection-column {
+    display: none;
+  }
+}
+
+.ant-collapse-content-box {
+  padding: 0px !important;
+}
+
+.ant-table-small {
+  > .ant-table-content {
+    > .ant-table-body {
+      margin: 0 !important;
+    }
+  }
+}
+
+.ant-collapse-header {
+  padding: 9px 16px !important;
+}
+
+.ant-calendar-picker {
+  width: 100%;
+}
+
+//设置对话框内部内容的样式
+.ant-modal-body {
+  padding: 0px 8px !important;
+}
+
+.ant-input-number {
+  width: 100% !important;
+}
+
+.ant-table {
+  font-size: 12px !important;
+}
+
+.ant-form-item-required {
+  label {
+    color: #8d99a6 !important;
+    font-size: 12px !important;
+  }
+}
+
+.ant-form-item-label {
+  label {
+    color: #8d99a6 !important;
+    font-size: 12px !important;
+  }
+
+}
+
+.ant-select-selection-selected-value {
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.ant-input {
+  //border: 1px solid #bbdd08 !important;
+  background-color: #ffffff !important;
+  font-weight: 600;
+  color: #000 !important;
+
+}
+
+.ant-btn {
+  font-size: 12px !important;
+}
+
+.ant-tag {
+  //width: 62px;
+}
+
+.ant-drawer-body {
+  padding: 0px !important;
+
+}
+
+.ant-progress-bg {
+  height: 14px !important;
+}
+
+.fa-exclamation-triangle {
+  color: #faad14;
+  font-size: 16px;
+}
+
+.fa-check-circle {
+  color: #2f54eb;
+  font-size: 16px;
+}
+
+.fa-pause-circle {
+  color: #bfbfbf;
+  font-size: 16px;
+}
+
+.form-table {
+  .ant-table-thead {
+    th {
+      padding: 8px;
+      text-align: center;
+    }
+  }
+
+  .editable-row {
+    td {
+      height: 38px;
+      padding: 0 !important;
+      margin: 0;
+      text-align: center;
+
+      .editable-cell-value-wrap {
+        height: 38px;
+        line-height: 38px;
+        padding-right: 0 !important;
+        box-sizing: border-box;
+      }
+
+      .ant-row {
+        width: 100%;
+        margin: 0;
+        margin-right: -66px !important;
+        padding: 0;
+
+        .ant-form-item-children {
+          input, .ant-input-number {
+            height: 38px;
+            border-color: transparent;
+            border-radius: 0;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    &:hover td {
+      background-color: transparent !important;
+    }
+
+    &.ant-table-row-selected td {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.default-filter {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+
+  .default-filter-item {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px dashed #e8e8e8;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+}
+
+.ant-badge-status-dot {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.ant-page-header {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.ant-page-header-footer {
+  padding-top: 1px !important;
+}
+//定义表单输入框间距,也会影响分类导航栏
+.ant-form-item {
+  margin-bottom: 20px !important;
+}
+.ant-page-header-heading-title {
+  font-size: 18px !important;
+}
+.ant-tabs-tab {
+  font-size: 14px !important;
+}
+.ant-divider-horizontal{
+  margin: 0px!important;
+}

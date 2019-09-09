@@ -1,0 +1,257 @@
+@import './antd.scss';
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+fieldset, lengend, button, input, textarea,
+th, td {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  height: 100%;
+  background-color: #f0f2f5 !important;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Lantinghei SC', 'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'sans-serif', 'SimSun';
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  .wrapper-main {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ebeef5;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    .wrapper-header {
+      position: relative;
+      top: 0px;
+      padding: 10px;
+      padding-left: 0px;
+      padding-bottom: 15px;
+      background-color: #ffffff;
+      border: 0px solid #ddd;
+      //border-bottom: none;
+      border-radius: 4px 4px 0 0;
+      z-index: 9;
+      margin-bottom: 0px;
+      .textR {
+        .ant-btn {
+          margin-left: 15px;
+          color: #606266;
+          background: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 100%);
+          border: 1px solid #dcdfe6;
+          border-radius: 3px;
+          transition: all 0s;
+        }
+      }
+    }
+    .wrapper-div-nav {
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.textR {
+  text-align: right;
+}
+
+.textL {
+  text-align: left;
+}
+
+.textC {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.fr {
+  float: right;
+}
+
+.clearFix {
+  &::after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.default-line {
+  width: 100%;
+  margin: 0px 0;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+.preview-wrap {
+  .ant-modal-body {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//对话框高度
+.ant-modal {
+  top: 60px !important;
+}
+
+.no-children {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    padding: 0px;
+    .wrapper-main {
+      padding: 2px;
+      .wrapper-header {
+        align-items: right;
+        margin-bottom: 2px;
+        padding: 1px;
+        padding-bottom: 10px;
+        .textR {
+          margin-top: 10px;
+          text-align: center;
+          .ant-btn {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .ant-form-item {
+    padding: 0 15px !important;
+  }
+
+  .nvtooltip {
+    display: none !important;
+  }
+}
+
+.hiddenI {
+  display: none !important;
+}
+
+//定义输入框统一风格
+.number-wrap {
+  padding: 5px 3px !important;
+  input {
+    border-width: 1px;
+    border-radius: 4px;
+    outline: 0;
+    transition: all .3s linear;
+
+    width: 100%;
+    height: 32px;
+    background-color: #fbfbfb;
+    text-align: right;
+    color: #005eff;
+    &:focus {
+      outline: none;
+    }
+  }
+  .text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+  }
+  &.num {
+    text-align: center !important;
+
+  }
+  &.nobg {
+    .text {
+      background: transparent;
+      text-align: right;
+    }
+  }
+}
+
+//定义输入框table 风格
+.pp-table-wrap {
+  padding: 5px;
+  tr {
+    &:hover td {
+      background-color: transparent !important;
+    }
+    &.ant-table-row-selected td {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.br {
+  height: 20px;
+}
+
+.desc {
+  padding: 0 56px;
+  color: rgba(0, 0, 0, 0.45);
+  h3 {
+    margin: 0 0 12px 0;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 16px;
+    line-height: 32px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+.textR {
+  .ant-btn {
+    margin-left: 5px;
+    //color: #606266;
+    //background: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 100%);
+    //border: 1px solid #dcdfe6;
+    border-radius: 3px;
+    transition: all 0s;
+  }
+}
+.main-default-card-lr {
+  .ant-card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 16px;
+  }
+}
+.table-btn {
+  width: 200px;
+  button {
+    //color: #1890ff;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+}
+//对话框高度
+.modal-top {
+  top: 0px !important;
+}

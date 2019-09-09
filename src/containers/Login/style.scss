@@ -1,0 +1,112 @@
+.Login{
+  width:100%;
+  height:100vh;
+  // background: url("../../images/001.jpg") no-repeat center; 
+  // background-size:cover;
+  position:relative;
+  .loginCenter{
+    width:1000px;
+    height:600px; 
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    .loginLeft{
+      float:left;
+      width:650px;
+      height:600px;
+      background:rgba(0,0,0,0.3);
+
+    }
+    .loginRight{
+      float:left;
+      width:350px;
+      height:600px;
+      background:#fff;
+      position:relative;
+      .ant-tabs-bar {
+        margin-bottom: 40px;
+      }
+      .loginTitle{
+        position:absolute;
+        font-size:20px;
+        font-weight:bold;
+        color:#6096eb;
+        text-align:center;
+        left:40%;
+        top:8%;
+      }
+      .loginForm{
+        width:96%;
+        position: absolute;
+        right:10px;
+        top:18%;
+        .loginRegist{
+          float:left;
+          margin-left:25%;
+          margin-top:-10px;
+        }
+        .loginForgot{
+          float:right;
+          margin-top:-10px;
+          margin-right:8%;
+        }
+        .loginBtn{
+          width:224px;
+          margin-top:20px;
+          margin-left:25%;
+        }
+        .ding-login-wrap {
+          text-align: center;
+          .ding-btn {
+            width:224px;
+            margin: 0 auto;
+            margin-top:20px;
+          }
+        }
+        .pwd-wrap {
+          position: relative;
+          .pwd-caplock-info {
+            position: absolute;
+            top: -27px;
+            left: 0;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+@media (max-width: 750px) {
+  .Login{
+    .loginCenter{
+      width:100%;
+      height:100vh; 
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      .loginLeft{
+        display: none;
+      }
+      .loginRight{
+        width:100%;
+        height:100vh; 
+        .ant-tabs-bar {
+          margin-bottom: 40px;
+        }
+        .loginTitle{
+          position:absolute;
+          font-size:20px;
+          font-weight:bold;
+          color:#6096eb;
+          text-align:center;
+          left:40%;
+          top:8%;
+        }
+      }
+      
+    }
+  }
+}

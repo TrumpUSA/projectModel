@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <title>生产跟单系统</title>
+    <meta name="wpk-bid" content="dta_1_255773413">
+    <script>    !(function (c, i, e, b) {
+      var h = i.createElement("script");
+      var f = i.getElementsByTagName("script")[0];
+      h.type = "text/javascript";
+      h.crossorigin = true;
+      h.onload = function () {
+        c[b] || (c[b] = new c.wpkReporter({bid: "dta_1_255773413"}));
+        c[b].installAll()
+      };
+      f.parentNode.insertBefore(h, f);
+      h.src = e
+    })(window, document, "https://g.alicdn.com/woodpeckerx/jssdk??wpkReporter.js", "__wpk");</script>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<script src="//g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
+<script>
+  window.dingLogin = function () {
+    var ruri = encodeURIComponent('' + window.location.origin + '/dingLogin');
+    //emp
+    // var appid = 'dingoacrzzomwuegusb3z8';
+
+    //zuose
+    var  appid='dingoadjah7aabekdad4xl';
+
+    var goto = 'https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=' + appid + '&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=' + ruri;
+
+    var encodeGoto = encodeURIComponent(goto);
+
+    let obj = DDLogin({
+      id: "login_container",
+      goto: encodeGoto,
+      style: "border:none;background-color:#FFFFFF;",
+      width: "365",
+      height: "400"
+    });
+  }
+</script>
+</body>
+</html>
