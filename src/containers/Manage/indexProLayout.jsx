@@ -332,7 +332,7 @@ class Manage extends Component {
     const {sideVisible} = this.state;
     return (
       <ProLayout
-        title={'生产跟单系统'}
+        title={'项目模版'}
         navTheme='light'
         logo={<img width={60} height={30} src={logo}/>}
         layout='topmenu'

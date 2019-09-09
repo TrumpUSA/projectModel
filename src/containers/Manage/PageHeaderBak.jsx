@@ -53,7 +53,7 @@ class PageHeader extends Component {
     return (
       <header>
         <div className="header-left">
-          <Link to="/login">生产跟单系统</Link>
+          <Link to="/login">项目模版</Link>
         </div>
         <div className="header-right">
           <ul className="menu-first">
