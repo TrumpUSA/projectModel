@@ -7,9 +7,6 @@ import PageHeader from '../Manage/PageHeader'
 import MobileHeader from '../Manage/Mobile/MobileHeader'
 import MobileFooter from '../Manage/Mobile/MobileFooterV2'
 import DefaultFooter from '../../components/DefaultFooter'
-import {getRandomColor} from '../../constants/util'
-
-import {GridContent} from '@ant-design/pro-layout';
 
 import MenuItem from './MenuItem'
 import '../Manage/style.scss'

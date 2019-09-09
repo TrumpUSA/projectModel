@@ -1,0 +1,190 @@
+@import '../../theme/theme.scss';
+
+.ant-layout-header{
+  height:auto!important;
+}
+.manage,.home {
+  header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px #d4d4d4;
+    box-shadow: 0 0 5px #d4d4d4;
+    padding: 0 30px;
+    box-sizing: border-box;
+    .layout-wrap {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      cursor: pointer;
+      .username {
+        padding-right: 15px;
+      }
+    }
+
+    .header-left {
+      position: relative;
+      bottom: 3px;
+      height: 100%;
+      color: #333;
+      padding-left: 45px;
+      background-image: url(../../images/logo.png);
+      background-size: 40px 25px;
+      background-position: left center;
+      background-repeat: no-repeat;
+      margin-right: 30px;
+      a {
+        color: #333;
+        //padding-left: 10px;
+        //padding-top: 6px;
+        //font-size: 14px;
+        //font-weight: 500;
+      }
+    }
+    .header-right {
+      font-size: 14px;
+      //padding-left: 16px;
+      //padding-top: 2px;
+      .menu-first {
+        display: flex;
+        >li {
+          position: relative;
+          color: #333;
+          padding: 0 15px;
+          cursor: pointer;
+          >span {
+            margin-left: 5px;
+          }
+          .menu-secend {
+            min-width: 150px;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            display: none;
+            text-align: center;
+            padding: 5px 15px;
+            background-clip: padding-box;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            background: #fff;
+            transition: all 0.5s linear;
+            overflow: hidden;
+            z-index: 99999;
+            >li {
+              height: 26px;
+              line-height: 26px;
+              &:hover {
+                color: #fff;
+                background-color: #4c7cff;
+              }
+            }
+          }
+          &:hover {
+            .menu-secend {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    min-height: calc(100vh - 80px);
+
+    aside {
+      width: 180px;
+      background-color: #242831;
+      border-right: 1px solid #1b1e25;
+      padding: 20px 11px;
+      ul {
+        text-align: left;
+        li {
+          padding: 5px 0;
+          padding-left: 20px;
+          border-radius:3px;
+          cursor: pointer;
+          &:hover {
+            background-color: darken($color: #242831, $amount: 10%);
+          }
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .manage {
+    main {
+      min-height: calc(100vh - #{$footerHeight} - #{$headerHeight});
+      overflow: auto;
+    }
+  }
+}
+
+//
+.ant-layout-sider{
+  background-color: #fbfbfb!important;
+}
+.layout {
+  .side-menu {
+    min-height: 100vh;
+    .mask {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      //background-color: rgba(0,0,0,0.3);
+    }
+    &.hide {
+      display: none;
+    }
+    .logo {
+      width: 80%;
+      height: 50px;
+      margin: 20px auto;
+      background-image: url(../../images/logo.png);
+      background-size: 40px 25px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #fff;
+    }
+  }
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .layout {
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      .mask {
+        display: block;
+      }
+      &.hide {
+        display: none;
+      }
+    }
+  }
+}

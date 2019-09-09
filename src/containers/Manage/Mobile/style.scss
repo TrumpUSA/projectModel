@@ -1,0 +1,101 @@
+@import '../../../theme/theme.scss';
+
+.mobile-header {
+  display: flex;
+  width: 100%;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px #d4d4d4;
+  box-shadow: 0 0 5px #d4d4d4;
+  padding: 0 30px;
+  box-sizing: border-box;
+  a {
+    color: #333;
+  }
+  .header-left {
+    width: 40px;
+    height: 100%;
+    background-image: url(../../../images/logo.png);
+    background-size: 100% 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
+}
+
+.mobile-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 200;
+  font-size: 11px;
+  width: 100%;
+  overflow: auto;
+  height: $footerHeight;
+  background: #f6f6f6;
+  border-top: 1px solid #e4e4e4;
+  background-color: #fff;
+  &::-webkit-scrollbar {
+    height: 0 !important;
+  }
+  .footer-scroll-list {
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+    .footer-menu-item {
+      // width: 25%;
+      display: inline-block;
+      text-align: center;
+      padding: 0 10px;
+      box-sizing: border-box;
+      &.active {
+        color: #4AC15F;
+        font-weight: 400;
+      }
+      .item-name {
+        display: block;
+      }
+    }
+    .footer-menu-item-icon {
+      font-size: 24px;
+      color: #08c;
+      font-weight: 300;
+      &.active {
+        //#4AC15F; #08c;
+        color: #4AC15F;
+        font-weight: 500;
+      }
+    }
+  }
+  .footer-work-platfrom {
+    position: fixed;
+    font-weight: 400;
+    font-size: 11px;
+    right: 0;
+    bottom: -1px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: $footerHeight;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 9;
+    .active {
+      color: $theme-color;
+    }
+    .workplat {
+      width: 100%;
+      text-align: center;
+    }
+    .item-name {
+      display: block;
+    }
+  }
+}

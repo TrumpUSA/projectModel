@@ -6,7 +6,7 @@ import {fab} from '@fortawesome/free-brands-svg-icons'
 import {fas} from '@fortawesome/free-solid-svg-icons'
 
 import Home from './containers/Home'
-import PrivateRoute from './components/PrivateRoute'
+
 import DingLogin from './components/DingLogin'
 import NotFound from './containers/NotFound'
 
@@ -27,14 +27,7 @@ const Login = Loadable({
 //   loader: () => import('./containers/DashBoard'),
 //   loading: () => null
 // })
-const PrintPreview = Loadable({
-  loader: () => import('./components/PrintPreview'),
-  loading: () => null
-})
-const PrintReportPreview = Loadable({
-  loader: () => import('./components/PrintPreview/PrintReport'),
-  loading: () => null
-})
+
 
 class App extends Component {
   render() {
@@ -45,11 +38,7 @@ class App extends Component {
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/dingLogin" component={DingLogin}></Route>
-          <PrivateRoute path="/manage" component={Manage}></PrivateRoute>
-          {/*<PrivateRoute exact path="/DashBoard" component={DashBoard}></PrivateRoute>*/}
-          <PrivateRoute exact path="/printPreview/:uid" component={PrintPreview}></PrivateRoute>
-          <PrivateRoute exact path="/print/report/:bizUid/:knowledgeGroupUid"
-                        component={PrintReportPreview}></PrivateRoute>
+
           <Route component={NotFound}></Route>
         </Switch>
       </div>
